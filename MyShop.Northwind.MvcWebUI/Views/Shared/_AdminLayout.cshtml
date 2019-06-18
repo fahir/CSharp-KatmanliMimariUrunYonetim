@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <row>
+        <div id="header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/Admin/Index">My Shop Admin Panel</a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-left">
+                            @{ Html.RenderAction("CurrentUser", "Account");}
+
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <a title="Order List" class="btn btn-info btn-sm" href="/OrderDetail/OrderList">
+                                <span class="glyphicon glyphicon-list-alt"> Order List</span>
+                            </a>
+                            <a href="/UserRole/Index" class="btn btn-info btn-sm" title="User Role List">
+                                <span class="glyphicon glyphicon-user"> User Role List</span>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </row>
+    <br class="space" />
+    <div id="categories" class="col-md-2">
+        @{Html.RenderAction("List", "Category", new { actionName = "Index", controllerName = "Admin" });}
+    </div>
+    <br />
+    <div id="content" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        @RenderBody()
+    </div>
+</body>
+</html>
+@RenderSection("Scripts", false)
+<style>
+    
+
+    .space {
+        line-height: 55px;
+    }
+
+    html {
+        overflow-y: scroll;
+    }
+</style>

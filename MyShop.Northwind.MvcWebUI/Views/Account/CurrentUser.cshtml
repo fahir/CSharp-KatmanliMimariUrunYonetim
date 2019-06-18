@@ -1,0 +1,21 @@
+﻿@model MyShop.Northwind.MvcWebUI.Models.CurrentUserViewModel
+
+    <div id="currentUser">
+        @using (Html.BeginForm("", ""))
+        {
+            if (!String.IsNullOrEmpty(Model.User))
+            {
+              <ul><b>Hi @Model.User</b></ul>  
+              <ul>
+                  <li>
+                      <a href="/Account/Logout" class="btn btn-default btn-sm">
+                          <span class="glyphicon glyphicon-log-out"></span> Log out
+                      </a>
+                  </li>
+              </ul>
+            }
+        }
+    </div>
+<style>ul {
+  list-style-type: none;
+}</style>

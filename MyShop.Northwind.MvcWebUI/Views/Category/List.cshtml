@@ -1,0 +1,22 @@
+﻿@model MyShop.Northwind.MvcWebUI.Models.CategoryListViewModel
+<nav class="nav-sidebar" style="width:180px">
+    <div class="nav">
+        <div class=" list-group">
+            @Html.RouteLink("Home",
+                new { controller = Model.ControllerName, action = Model.ActionName },
+                new { @class = Model.CurrentCategory == 0 ? "list-group-item list-group-item-action active" : "list-group-item list-group-item-action" })
+            @foreach (var category in Model.Categories)
+            {
+                @Html.RouteLink(category.CategoryName, new
+                {
+                    category = category.Id,
+                    controller = Model.ControllerName,
+                    action = Model.ActionName
+                },
+            new { @class = category.Id == Model.CurrentCategory ? "list-group-item list-group-item-action active" : "list-group-item list-group-item-action" }
+           )
+            }
+        </div>
+    </div>
+</nav>
+

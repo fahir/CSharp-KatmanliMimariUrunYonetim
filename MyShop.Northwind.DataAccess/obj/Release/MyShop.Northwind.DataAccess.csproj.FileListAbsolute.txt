@@ -1,0 +1,2 @@
+E:\vs_pro\OZBAY\MyShop.Northwind.DataAccess\obj\Release\MyShop.Northwind.DataAccess.csprojAssemblyReference.cache
+E:\vs_pro\OZBAY\MyShop.Northwind.DataAccess\obj\Release\MyShop.Northwind.DataAccess.csproj.CoreCompileInputs.cache

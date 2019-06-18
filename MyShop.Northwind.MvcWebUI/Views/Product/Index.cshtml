@@ -1,0 +1,63 @@
+﻿@model MyShop.Northwind.MvcWebUI.Models.ProductListViewModel
+@using MyShop.Northwind.MvcWebUI.HtmlHelpers
+@{
+
+    ViewBag.Title = "title";
+    Layout = "../Shared/_Layout.cshtml";
+}
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <th class="col-md-10" scope="col">ProductName</th>
+            <th class="col-md-2" scope="col">Unit Price</th>
+            <th class="col-md-2" scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model.Products)
+        {
+            <tr>
+                <td>@product.ProductName</td>
+                <td>@product.UnitPrice.ToString("c")</td>
+                <td>
+                    <input type="submit" class="btn btn-success addToCart" id="@product.ProductId" name="name" value="Add to cart" />
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="text-center">
+    @Html.Pager(Model.PagingInfo, Model.Route)
+</div>
+
+<style>
+    .table {
+        table-layout: fixed;
+        word-wrap: break-word;
+    }
+</style>
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('.addToCart').on('click', function (e) {
+
+                $.ajax({
+                    type: "POST",
+                    url: "/Cart/AddToCart/",
+                    data: {
+                        "productId": e.target.id
+
+                    },
+                    success: function (result) {
+
+                        $("#cart").load(location.href + " #cart");
+
+                    },
+                    error: function (result) {
+                        alert('error');
+                    }
+                });
+            });
+        });
+    </script>
+}

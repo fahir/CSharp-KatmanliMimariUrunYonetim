@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <title>User Panel</title>
+</head>
+<body>
+    <row>
+        <div id="header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/Product/Index">My Shop User Panel</a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-left">
+                            @{ Html.RenderAction("CurrentUser", "Account");}
+
+                        </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                @{ Html.RenderAction("CartSummary", "Cart");}
+                                <a href="/Cart/Index">
+                                    <img src="~/Content/s.png" width="64" height="64" class="showCart">
+                                </a>
+                            </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </row>
+    <br class="space" />
+    <div id="categories" class="col-md-2">
+        @{Html.RenderAction("List", "Category", new { actionName = "Index", controllerName = "Product" });}
+    </div>
+    <br />
+    <div id="content" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        @RenderBody()
+    </div>
+</body>
+</html>
+<style>
+    .space {
+        line-height: 55px;
+    }
+
+    .showCart {
+        z-index: 1000 !important;
+        right: 30px;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .mycart {
+        z-index: 999 !important;
+        left: 0;
+        background-color: cornflowerblue;
+    }
+
+    .bg-success {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 999;
+        background-color: #AAAAAA !important;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100; /* Behind the navbar */
+        padding: 48px 0 0; /* Height of navbar */
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    }
+
+    .sidebar-sticky {
+        position: relative;
+        top: 0;
+        height: calc(100vh - 48px);
+        padding-top: .5rem;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    }
+
+    @@supports ((position: -webkit-sticky) or (position: sticky)) {
+        .sidebar-sticky {
+            position: -webkit-sticky;
+            position: sticky;
+        }
+    }
+
+    .sidebar .nav-link {
+        font-weight: 500;
+        color: #333;
+    }
+
+        .sidebar .nav-link .feather {
+            margin-right: 4px;
+            color: #999;
+        }
+
+        .sidebar .nav-link.active {
+            color: #007bff;
+        }
+
+            .sidebar .nav-link:hover .feather,
+            .sidebar .nav-link.active .feather {
+                color: inherit;
+            }
+
+    .sidebar-heading {
+        font-size: .75rem;
+        text-transform: uppercase;
+    }
+
+
+    html {
+        overflow-y: scroll;
+    }
+</style>
+@RenderSection("Scripts", false)

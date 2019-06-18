@@ -1,0 +1,79 @@
+﻿@model MyShop.Northwind.MvcWebUI.Models.ProductListViewModel
+@using MyShop.Northwind.MvcWebUI.HtmlHelpers
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<p>
+    @using (Html.BeginForm("Create", "Admin"))
+    {
+
+        <input type="submit" formmethod="get" class="btn btn-success" name="name" value="Create" />
+    }
+</p>
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Product.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Product.QuantityPerUnit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Product.UnitPrice)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Products)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QuantityPerUnit)
+                </td>
+                <td>@item.UnitPrice.ToString("c")</td>
+                <td>
+                    @using (Html.BeginForm("Edit", "Admin"))
+                    {
+                        @Html.Hidden("productId", item.ProductId)
+                        <input type="submit" formmethod="get" class="btn btn-warning btn-block" name="name" value="Edit" />
+                    }
+                </td>
+                <td>
+                    <input type="submit" class="deleteProduct btn btn-danger btn-block" name="name" id="@item.ProductId" value="Delete" />
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="text-center">
+    @Html.Pager(Model.PagingInfo, Model.Route)
+</div>
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('.deleteProduct').on('click', function (e) {
+
+                $.ajax({
+                    type: "POST",
+                    url: "/Admin/Delete/",
+                    data: {
+                        "productId": e.target.id
+
+                    },
+                    success: function (result) {
+                        window.location.reload();
+                    },
+                    error: function (result) {
+                        alert("");
+                    }
+                });
+            });
+        });
+    </script>
+}

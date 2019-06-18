@@ -1,0 +1,123 @@
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\DevFramework.Core.dll.config
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\DevFramework.Core.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\DevFramework.Core.pdb
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\Antlr3.Runtime.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\FluentNHibernate.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\FluentValidation.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\Iesi.Collections.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\log4net.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\NHibernate.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\Ninject.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\PostSharp.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\Remotion.Linq.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\Remotion.Linq.EagerFetching.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\Antlr3.Runtime.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\FluentNHibernate.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\FluentValidation.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\Iesi.Collections.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\log4net.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\NHibernate.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\Ninject.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\PostSharp.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\Remotion.Linq.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\Remotion.Linq.EagerFetching.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\bin\Debug\DevFramework.Core.pssym
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\obj\Debug\Ozbay.Core.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\obj\Debug\Ozbay.Core.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\obj\Debug\Ozbay.Core.csproj.CopyComplete
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\obj\Debug\DevFramework.Core.dll.postsharp
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\obj\Debug\DevFramework.Core.dll
+C:\Users\Administrator\Desktop\DevFramework-4\DevFramework 4\DevFramework\DevFramework.Core\obj\Debug\DevFramework.Core.pdb
+E:\OZBAY\Ozbay.Core\bin\Debug\DevFramework.Core.dll.config
+E:\OZBAY\Ozbay.Core\bin\Debug\DevFramework.Core.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\DevFramework.Core.pdb
+E:\OZBAY\Ozbay.Core\bin\Debug\Antlr3.Runtime.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\AutoMapper.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\EntityFramework.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\EntityFramework.SqlServer.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\FluentNHibernate.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\FluentValidation.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\Iesi.Collections.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\log4net.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\Newtonsoft.Json.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\NHibernate.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\Ninject.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\PostSharp.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\Remotion.Linq.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\Remotion.Linq.EagerFetching.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\System.Web.Helpers.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\System.Web.Mvc.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\System.Web.Razor.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\System.Web.WebPages.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\System.Web.WebPages.Razor.dll
+E:\OZBAY\Ozbay.Core\bin\Debug\Antlr3.Runtime.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\AutoMapper.pdb
+E:\OZBAY\Ozbay.Core\bin\Debug\AutoMapper.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\EntityFramework.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\EntityFramework.SqlServer.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\FluentNHibernate.pdb
+E:\OZBAY\Ozbay.Core\bin\Debug\FluentNHibernate.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\FluentValidation.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\Iesi.Collections.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\log4net.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\Newtonsoft.Json.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\NHibernate.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\Ninject.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\PostSharp.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\Remotion.Linq.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\Remotion.Linq.EagerFetching.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\System.Web.Helpers.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\System.Web.Mvc.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\System.Web.Razor.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\System.Web.WebPages.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\System.Web.WebPages.Razor.xml
+E:\OZBAY\Ozbay.Core\bin\Debug\DevFramework.Core.pssym
+E:\OZBAY\Ozbay.Core\obj\Debug\Ozbay.Core.csproj.CoreCompileInputs.cache
+E:\OZBAY\Ozbay.Core\obj\Debug\Ozbay.Core.csproj.CopyComplete
+E:\OZBAY\Ozbay.Core\obj\Debug\DevFramework.Core.dll.postsharp
+E:\OZBAY\Ozbay.Core\obj\Debug\DevFramework.Core.dll
+E:\OZBAY\Ozbay.Core\obj\Debug\DevFramework.Core.pdb
+E:\OZBAY\Ozbay.Core\obj\Debug\Ozbay.Core.csprojAssemblyReference.cache
+D:\OZBAY\Ozbay.Core\bin\Debug\DevFramework.Core.dll.config
+D:\OZBAY\Ozbay.Core\bin\Debug\DevFramework.Core.dll
+D:\OZBAY\Ozbay.Core\bin\Debug\DevFramework.Core.pdb
+D:\OZBAY\Ozbay.Core\bin\Debug\AutoMapper.dll
+D:\OZBAY\Ozbay.Core\bin\Debug\FluentValidation.dll
+D:\OZBAY\Ozbay.Core\bin\Debug\log4net.dll
+D:\OZBAY\Ozbay.Core\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\OZBAY\Ozbay.Core\bin\Debug\Ninject.dll
+D:\OZBAY\Ozbay.Core\bin\Debug\PostSharp.dll
+D:\OZBAY\Ozbay.Core\bin\Debug\AutoMapper.xml
+D:\OZBAY\Ozbay.Core\bin\Debug\FluentValidation.xml
+D:\OZBAY\Ozbay.Core\bin\Debug\log4net.xml
+D:\OZBAY\Ozbay.Core\bin\Debug\Ninject.xml
+D:\OZBAY\Ozbay.Core\bin\Debug\PostSharp.xml
+D:\OZBAY\Ozbay.Core\bin\Debug\DevFramework.Core.pssym
+D:\OZBAY\Ozbay.Core\obj\Debug\Ozbay.Core.csprojAssemblyReference.cache
+D:\OZBAY\Ozbay.Core\obj\Debug\Ozbay.Core.csproj.CoreCompileInputs.cache
+D:\OZBAY\Ozbay.Core\obj\Debug\Ozbay.Core.csproj.CopyComplete
+D:\OZBAY\Ozbay.Core\obj\Debug\DevFramework.Core.dll.postsharp
+D:\OZBAY\Ozbay.Core\obj\Debug\DevFramework.Core.dll
+D:\OZBAY\Ozbay.Core\obj\Debug\DevFramework.Core.pdb

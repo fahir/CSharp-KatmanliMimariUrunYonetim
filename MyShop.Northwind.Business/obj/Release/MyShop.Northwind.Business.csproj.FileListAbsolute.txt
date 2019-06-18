@@ -1,0 +1,2 @@
+E:\vs_pro\OZBAY\MyShop.Northwind.Business\obj\Release\MyShop.Northwind.Business.csprojAssemblyReference.cache
+E:\vs_pro\OZBAY\MyShop.Northwind.Business\obj\Release\MyShop.Northwind.Business.csproj.CoreCompileInputs.cache

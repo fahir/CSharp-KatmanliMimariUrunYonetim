@@ -1,0 +1,36 @@
+﻿@model MyShop.Northwind.MvcWebUI.UserRoleListViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>User Role List</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserRoleItem.RoleName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserRoleItem.UserName)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model.UserRoleItemList)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @using (Html.BeginForm("Edit", "UserRole"))
+                {
+                    @Html.Hidden("userRoleId", item.Id)
+                    <input type="submit" formmethod="get" class="btn btn-warning" name="name" value="Edit" />
+                }
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,46 @@
+﻿@model MyShop.Northwind.MvcWebUI.OrderDetailViewModel
+@using MyShop.Northwind.Entities.ComplexTypes
+@using MyShop.Northwind.MvcWebUI.HtmlHelpers
+
+@{
+    ViewBag.Title = "OrderList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>Order List</h2>
+@foreach (var line in Model.OrderDetailItemList)
+{
+    <div><b>User Name :</b>@line.UserName&emsp;&emsp;<b>Order Number :</b>@line.OrderDetailId<b>&emsp;&emsp;Order Completed :</b>@line.IsCompleted</div>
+    <table class="table table-borderless">
+        <thead>
+        <th class="col-md-7" scope="col">Product Name</th>
+        <th class="col-md-1" scope="col">Unit Price</th>
+        <th class="col-md-1" scope="col">Quantity</th>
+        <th class="col-md-1" scope="col">Sub Total</th>
+        </thead>
+        <tbody>
+            @{ decimal total = 0;}
+            @foreach (var item in Newtonsoft.Json.JsonConvert.DeserializeObject<Cart>(line.List).Lines)
+            {
+                <tr>
+                    <td>@item.Product.ProductName</td>
+                    <td>@item.Product.UnitPrice</td>
+                    <td>@item.Qunatity</td>
+                    <td>@((item.Qunatity * item.Product.UnitPrice).ToString("C"))</td>
+                    @{total += item.Product.UnitPrice * (decimal)item.Qunatity;}
+                </tr>
+            }
+        </tbody>
+        <tfoot style="background-color:cadetblue">
+            <tr>
+                <td class="col-md-7"></td>
+                <td class="col-md-2"></td>
+                <td class="col-md-1"><b>Total:</b></td>
+
+                <td colspan="100%">@total.ToString("C")</td>
+            </tr>
+        </tfoot>
+    </table>
+}
+<div class="text-center">
+    @Html.Pager(Model.PagingInfo, Model.Route)
+</div>

@@ -1,0 +1,40 @@
+﻿@model MyShop.Northwind.MvcWebUI.UserRoleUpdateViewModel
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>User Role Edit Form</h2>
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+        </div>
+        <div class="row">
+            <div class="col-md-12 order-md-1">
+                @using (Html.BeginForm())
+                {
+                    @Html.TextBoxFor(p => p.UserRole.Id, new { @class = "form-control", @value = Model.UserRole.Id, @type = "hidden" })
+                    @Html.TextBoxFor(p => p.UserRole.UserId, new { @class = "form-control", @value = Model.UserRole.UserId, @type = "hidden" })
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="productName">User Name</label>
+                            @Html.TextBoxFor(p => p.User.UserName, new { @class = "form-control", @readonly = "true" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="categoryName">Role Name</label>
+                            @Html.DropDownListFor(p => p.UserRole.RoleId, new SelectList(Model.Roles, "Id", "RoleName"), new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" formmethod="post" value="Save" class="btn btn-success" />
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,2 @@
+E:\vs_pro\OZBAY\MyShop.Northwind.MvcWebUI\obj\Release\MyShop.Northwind.MvcWebUI.csprojAssemblyReference.cache
+E:\vs_pro\OZBAY\MyShop.Northwind.MvcWebUI\obj\Release\MyShop.Northwind.MvcWebUI.csproj.CoreCompileInputs.cache

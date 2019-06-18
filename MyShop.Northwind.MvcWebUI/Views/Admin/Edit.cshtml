@@ -1,0 +1,71 @@
+﻿@model MyShop.Northwind.MvcWebUI.Models.ProductAddOrUpdateViewModel
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<body class="bg-light">
+
+    <div class="container">
+        <div class="py-5 text-center">
+            <h2>Product Edit Form</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 order-md-1">
+                @using (Html.BeginForm())
+                {
+                    @Html.TextBoxFor(p => p.Product.ProductId, new { @class = "form-control", @value = Model.Product.ProductId, @type = "hidden" })
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="productName">Product name</label>
+                            @Html.TextBoxFor(p => p.Product.ProductName, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Product.ProductName, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-5 mb-3">
+                            <label for="unitPrice">Unit price</label>
+                            @Html.TextBoxFor(p => p.Product.UnitPrice, new { @class = "form-control", Value = String.Format("{0:#.##0}", Model.Product.UnitPrice) })
+                            @Html.ValidationMessageFor(model => model.Product.UnitPrice, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 mb-3">
+                            <label for="qunatityPerUnit">Qunatity per unit</label>
+                            @Html.TextBoxFor(p => p.Product.QuantityPerUnit, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Product.QuantityPerUnit, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="categoryName">Category name</label>
+                            @Html.DropDownListFor(p => p.Product.CategoryId, new SelectList(Model.Categories, "Id", "CategoryName"), new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" formmethod="post" value="Save" class="btn btn-success" />
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+@section Scripts{
+    <script>
+        document.getElementById('Product_UnitPrice').addEventListener('change', force2decimals);
+        function force2decimals(event) {
+            var str = event.target.value;
+            console.log(str);
+            if (str.includes('@Model.CultureDecimalSeperator')) {
+            var array = str.split('@Model.CultureDecimalSeperator');
+            var addLength = 3 - array[1].length;
+                for (var i = 0; i < addLength; i++)
+                    {
+                    str = str + '0';
+                   }
+            }
+            event.target.value = str;
+        }
+    </script>
+}

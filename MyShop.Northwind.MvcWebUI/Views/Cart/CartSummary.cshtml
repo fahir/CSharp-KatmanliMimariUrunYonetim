@@ -1,0 +1,20 @@
+﻿@model MyShop.Northwind.Entities.ComplexTypes.Cart
+<div id="cart">
+    <span class="figure-caption">
+        <b>Your cart(@Model.Lines.Sum(x => x.Qunatity)):</b>
+        @Model.Total.ToString("c")
+    </span>
+    @using (Html.BeginForm("Checkout", "Cart"))
+    {
+        if (Model.Total > 0)
+        {
+            <input type="submit" formmethod="get" class="btn btn-info" name="name" value="Checkout" />
+
+        }
+        else
+        {
+            <input type="submit" formmethod="get" class="btn btn-info" disabled="disabled"
+                   name="name" value="Checkout" />
+        }
+    }
+</div>

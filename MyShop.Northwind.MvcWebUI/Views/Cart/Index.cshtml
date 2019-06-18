@@ -1,0 +1,67 @@
+﻿@model MyShop.Northwind.Entities.ComplexTypes.Cart
+@{
+    ViewBag.Title = "title";
+    Layout = "../Shared/_Layout.cshtml";
+}
+<b>Cart</b>
+
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <th scope="col">ProductName</th>
+            <th scope="col">Unit Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cartLine in Model.Lines)
+        {
+            <tr>
+                <td>@cartLine.Product.ProductName</td>
+                <td>@cartLine.Product.UnitPrice.ToString("c")</td>
+                <td>@cartLine.Qunatity</td>
+                <td>@((cartLine.Product.UnitPrice * cartLine.Qunatity).ToString("c"))</td>
+                <td>
+                <td>
+                    <input type="submit" class="removeFromCart btn btn-danger btn-block" name="name" id="@cartLine.Product.ProductId" value="Remove from cart" />
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<b><p align="center"> Cart Total: @((Model.Total).ToString("c"))</p></b>
+<p align="center">
+    @using (Html.BeginForm("Checkout", "Cart"))
+    {
+        if (Model.Total > 0)
+        {
+            <input type="submit" formmethod="get" class="btn btn-primary" name="name" value="Checkout Now" />
+        }
+        else
+        {
+            <input type="submit" formmethod="get" class="btn btn-primary " disabled="disabled" name="name" value="Checkout Now" />
+        }
+    }
+</p>
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('.removeFromCart').on('click', function (e) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Cart/RemoveFromCart/",
+                    data: {
+                        "productId": e.target.id
+                    },
+                    success: function (result) {
+                        window.location.reload();
+                    },
+                    error: function (result) {
+                        alert('error');
+                    }
+                });
+            });
+        });
+    </script>
+}

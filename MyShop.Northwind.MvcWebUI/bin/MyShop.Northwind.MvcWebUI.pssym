@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="364" PostSharpLinesOfCode="0" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[DevFramework.Core]OZBAY.Core.Aspects.Postsharp.AuthorizationAspects.SecuredOperation">
+    <Instance Declaration="#2=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.AdminController::Index(System.Int32, System.Int32)" Id="cd6d5cca5b4dc78d">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3=Wrapped by advice(s) OnEntry, OnSuccess, OnException, OnExit" Ordinal="0" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#4=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.AdminController::Create()" Id="cd6d5ccab580959d">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#5=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.AdminController::Create(MyShop.Northwind.Entities.Concrete.Product)" Id="cd6d5cca53b8cb84">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#6=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.AdminController::GetCategoryList()" Id="cd6d5cca55867709">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#7=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.AdminController::Edit(MyShop.Northwind.Entities.Concrete.Product)" Id="cd6d5ccabe45341d">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#8=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.AdminController::Delete(System.Int32)" Id="cd6d5cca1e23f67f">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="5" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#9=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.AdminController::GetProductListByCategory(System.Int32)" Id="cd6d5cca7ba4d05f">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="6" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#10=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.CartController::AddToCart(MyShop.Northwind.Entities.ComplexTypes.Cart, System.Int32)" Id="cd6d5cca28cabf9d">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="7" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#11=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.CartController::Index(MyShop.Northwind.Entities.ComplexTypes.Cart)" Id="cd6d5cca2225edc1">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="8" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#12=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.CartController::RemoveFromCart(MyShop.Northwind.Entities.ComplexTypes.Cart, System.Int32)" Id="cd6d5ccabbcd94e9">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="9" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#13=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.CartController::Checkout(MyShop.Northwind.Entities.ComplexTypes.Cart)" Id="cd6d5ccabe7de826">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="10" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#14=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.CartController::Checkout([MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Models.CartViewModel, MyShop.Northwind.Entities.ComplexTypes.Cart)" Id="cd6d5cca835ca5cb">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="11" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#15=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.CartController::GetOrderDetailId(System.Int32, System.Int32, System.Int32)" Id="cd6d5ccaec89d282">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="12" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#16=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.CartController::GetCartId(System.String)" Id="cd6d5cca3594670f">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="13" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#17=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.CartController::GetUserIdByUserName(System.String)" Id="cd6d5ccab16c40c3">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="14" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#18=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.CartController::GetShippingDetailId([MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Models.CartViewModel)" Id="cd6d5cca0fa8f570">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="15" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#19=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.CartController::Completed([MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Models.CompletedViewModel)" Id="cd6d5cca4f9b9f57">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="16" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#20=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.CartController::CartSummary(MyShop.Northwind.Entities.ComplexTypes.Cart)" Id="cd6d5cca865b9dad">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="17" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#21=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.CategoryController::Index()" Id="cd6d5ccad5816a4e">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="18" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#22=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.CategoryController::List(System.String, System.String, System.Int32)" Id="cd6d5cca97b8511e">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="19" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#23=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.OrderDetailController::OrderList(System.Int32, System.Int32)" Id="cd6d5ccacce852a4">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="20" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#24=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.ProductController::Index(System.Int32, System.Int32)" Id="cd6d5cca86a91770">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="21" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#25=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.ProductController::GetProductListByCategory(System.Int32)" Id="cd6d5ccad2eb4461">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="22" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#26=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.UserRoleController::Index()" Id="cd6d5cca482a1e4e">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="23" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#27=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.UserRoleController::Edit(System.Int32)" Id="cd6d5cca7203b200">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="24" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#28=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.UserRoleController::GetUserId(System.Int32)" Id="cd6d5ccab0775c4a">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="25" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#29=M:[MyShop.Northwind.MvcWebUI]MyShop.Northwind.MvcWebUI.Controllers.UserRoleController::Edit(MyShop.Northwind.Entities.Concrete.UserRole)" Id="cd6d5cca0fde2e1c">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3" Ordinal="26" />
+      </Target>
+    </Instance>
+  </Class>
+  <Annotation Target="#30=M:[DevFramework.Core]OZBAY.Core.Aspects.Postsharp.AuthorizationAspects.SecuredOperation::OnEntry(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#31=2" Description="#32=PostSharp estimates that 2 line(s) of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+  <Annotation Target="#33=M:[PostSharp]PostSharp.Aspects.OnMethodBoundaryAspect::OnSuccess([PostSharp]PostSharp.Aspects.MethodExecutionArgs)" Arguments="#31" Description="#32" />
+  <Annotation Target="#34=M:[PostSharp]PostSharp.Aspects.OnMethodBoundaryAspect::OnExit([PostSharp]PostSharp.Aspects.MethodExecutionArgs)" Arguments="#31" Description="#32" />
+  <Annotation Target="#35=M:[PostSharp]PostSharp.Aspects.OnMethodBoundaryAspect::OnException([PostSharp]PostSharp.Aspects.MethodExecutionArgs)" Arguments="#31" Description="#32" />
+</Symbols>
